@@ -1,12 +1,26 @@
 
-.nav-logo{
-  height: 100px;
+.nav {
+  background-color: white;
+  shape-outside: linear-gradient(250, 0, 0);
 }
-.brand-header{
-  height: 150px;
-  background-color: transparent;
+.nav-logo{
+  height: 80px;
 }
 
-.hero{
+section{
+  max-height: 25%;
+  height: 250px;
+}
+
+#hero{
   background-image: url('/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.info-text{
+  background-color: yellow;
+}
+.info-graphic{
+  background-color: red;
 }
