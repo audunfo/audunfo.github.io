@@ -1,0 +1,12 @@
+
+.nav-logo{
+  height: 100px;
+}
+.brand-header{
+  height: 150px;
+  background-color: transparent;
+}
+
+.hero{
+  background-image: url('/img/background.jpg');
+}
