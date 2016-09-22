@@ -22,14 +22,19 @@
       <img src="/img/logo.png" alt="DotMutual" class="nav-logo"/>
       <span flex></span>
       <div layout="column" layout-align="center">
+      <md-button class="" ng-href="http://blog.dotmutual.io">Blog</md-button>
+      </div>
+      <div layout="column" layout-align="center">
           <md-button class="md-primary md-raised">Signup</md-button>
       </div>
     </nav>
 
+    <!-- Hero section -->
     <section layout="row" id="hero" layout-align="center center">
       <h2 class="md-display-1">Headline</h2>
     </section>
 
+    <!-- Product info section -->
     <section id="info" layout-gt-sm="row" layout-sm="column">
       <div layout="row" flex-gt-md="50" flex="100" class="info-text">
           <pre>
@@ -42,16 +47,6 @@
           </pre>
       </div>
     </section>
-
   </md-content>
-
 </body>
-<!-- <script type="text/javascript">
-    (function(){
-      var app = angular.module('DotMutual', ['ngMaterial']);
-      app.controller('MainCtrl', function(){
-        console.log('test');
-      });
-    }());
-</script> -->
 </html>
