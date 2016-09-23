@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
   <link rel="stylesheet" href="/css/styles.css" media="screen" title="no title">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" title="no title">
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
@@ -25,26 +26,25 @@
       <md-button class="" ng-href="http://blog.dotmutual.io">Blog</md-button>
       </div>
       <div layout="column" layout-align="center">
-          <md-button class="md-primary md-raised">Signup</md-button>
+          <md-button class="md-primary md-raised btn-signup">Signup</md-button>
       </div>
     </nav>
 
     <!-- Hero section -->
-    <section layout="row" id="hero" layout-align="center center">
-      <h2 class="md-display-1">Headline</h2>
+    <section layout="row" id="hero" layout-align="left center">
+      <span flex="50" class="md-display-1" style="color: white; margin-left: 50px;">Ever been worried about the <b>identity</b> of a person you are doing online business with?</span>
     </section>
 
     <!-- Product info section -->
     <section id="info" layout-gt-sm="row" layout-sm="column">
       <div layout="row" flex-gt-md="50" flex="100" class="info-text">
-          <pre>
-            Info text
-          </pre>
+          <img src="/img/welcome-desktop.png" alt="" style="background:cover;"/>
       </div>
-      <div layout="row" flex-gt-md="50" flex="100" class="info-graphic">
-          <pre>
-            Graphics
-          </pre>
+      <div layout="column" flex-gt-md="50" flex="100" class="info-graphic" layout-align="start center">
+          <h2 class="md-display-3"> Do you feel skeptical?</h2>
+          <p class="md-subhead">
+            Lorem ipsum dolor sit amet, ea elit veniam animal pro. Meis antiopam est ei, sumo debet nonumy an vim. Ne reque aperiri praesent vel, nec no vero elitr cotidieque. Ei vis omnis conceptam, cetero vocibus hendrerit qui id. Sea doctus consequuntur no, nam fabulas dignissim at. Eam legendos lobortis ne, tempor tacimates delicatissimi ne mea, molestiae urbanitas mel in.
+          </p>
       </div>
     </section>
   </md-content>

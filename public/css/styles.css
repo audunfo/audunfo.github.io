@@ -1,0 +1,38 @@
+
+.nav {
+  background-color: white;
+  shape-outside: linear-gradient(250, 0, 0);
+}
+.nav-logo{
+  height: 80px;
+  margin-left: 20px;
+}
+
+.btn-signup{
+  margin-right: 20px;
+}
+
+section{
+  max-height: 25%;
+  height: 350px;
+  background-color: white;
+
+
+}
+section img{
+  max-height: 350px;
+}
+
+#hero{
+  background-image: url('/img/hero-bg-1024-2x.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.info-text{
+  /*background-color: yellow;*/
+}
+.info-graphic{
+  background-color: white;
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+@media screen and (max-width: 800px) {
+    section{
+      font-size: 85%;
+    }
+    .md-display-1{
+      font-size: 2em;
+    }
+}
