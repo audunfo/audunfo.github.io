@@ -13,20 +13,20 @@
 }
 
 section{
-  max-height: 25%;
-  height: 350px;
   background-color: white;
-
-
 }
 section img{
-  max-height: 350px;
+  height: 400px;
 }
 
 #hero{
   background-image: url('/img/hero-bg-1024-2x.jpg');
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.chevron-btn{
+
 }
 
 .info-text{

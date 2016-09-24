@@ -1,0 +1,328 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pla",
+				"platform	const"
+			],
+			[
+				"im",
+				"imports	property"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css\">\n    <link rel=\"stylesheet\" href=\"/css/styles.css\" media=\"screen\" title=\"no title\">\n    <link rel=\"stylesheet\" href=\"/css/responsive.css\" media=\"screen\" title=\"no title\">\n    <!-- Angular Material requires Angular.js Libraries -->\n    <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js\"></script>\n    <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js\"></script>\n    <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js\"></script>\n    <script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js\"></script>\n    <script src=\"https://use.fontawesome.com/31e7cde6c9.js\"></script>\n    <!-- Angular Material Library -->\n    <script src=\"https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js\"></script>\n    <script type=\"text/javascript\" src=\"js/app.js\"></script>\n  </head>\n  <body ng-app=\"dotMutual\" ng-cloak>\n    <md-content>\n    <nav layout=\"row\" class=\"nav\">\n      <img src=\"/img/logo.png\" alt=\"DotMutual\" class=\"nav-logo\"/>\n      <span flex></span>\n      <div layout=\"column\" layout-align=\"center\">\n        <md-button class=\"\" ng-href=\"http://blog.dotmutual.io\">Blog</md-button>\n      </div>\n      <div layout=\"column\" layout-align=\"center\">\n        <md-button class=\"md-primary md-raised btn-signup\" ng-click=\"alert('Yeeah, i thought so!');\">Signup</md-button>\n      </div>\n    </nav>\n    <!-- Hero section -->\n    <section layout=\"row\" id=\"hero\" layout-align=\"left center\">\n      <span flex=\"50\" class=\"md-display-1\" style=\"color: white; margin-left: 50px;\">Ever been worried about the <b>identity</b> of a person you are doing <b>online business</b> with?</span>\n      <md-button class=\"md-raised md-primary\" href=\"#info-text\" aria-label=\"Yes\" md-no-ink=\"true|false\" md-ripple-size=\"full\">Yes\n      </md-button>\n      \n      <!-- <span class=\"chevron-btn\" layout-align=\"left\"><i class=\"fa fa-chevron-down fa-6\" aria-hidden=\"true\"></i></span> -->\n    </section>\n    <!-- Product info section -->\n    <section id=\"info\" layout-gt-sm=\"row\" layout-sm=\"column\">\n      <div layout=\"row\" flex-gt-md=\"50\" flex=\"100\" class=\"info-text\">\n        <img src=\"/img/welcome-desktop.png\" alt=\"\" style=\"background:cover;\"/>\n      </div>\n      <div layout=\"column\" flex-gt-md=\"50\" id=\"info-text\" flex=\"100\" class=\"info-graphic\" layout-align=\"start center\">\n        <h2 class=\"md-display-3\"> Do you feel skeptical?</h2>\n        <p class=\"md-subhead\">\n          Lorem ipsum dolor sit amet, ea elit veniam animal pro. Meis antiopam est ei, sumo debet nonumy an vim. Ne reque aperiri praesent vel, nec no vero elitr cotidieque. Ei vis omnis conceptam, cetero vocibus hendrerit qui id. Sea doctus consequuntur no, nam fabulas dignissim at. Eam legendos lobortis ne, tempor tacimates delicatissimi ne mea, molestiae urbanitas mel in.\n        </p>\n      </div>\n    </section>\n    </md-content>\n  </body>\n</html>",
+			"file": "public/index.html",
+			"file_size": 3193,
+			"file_write_time": 1474723559000000,
+			"settings":
+			{
+				"buffer_size": 3193,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n.nav {\n  background-color: white;\n  shape-outside: linear-gradient(250, 0, 0);\n}\n.nav-logo{\n  height: 80px;\n  margin-left: 20px;\n}\n\n.btn-signup{\n  margin-right: 20px;\n}\n\nsection{\n  background-color: white;\n}\nsection img{\n  height: 400px;\n}\n\n#hero{\n  background-image: url('/img/hero-bg-1024-2x.jpg');\n  background-position: center;\n  background-size: cover;\n  height: 400px;\n}\n.chevron-btn{\n\n}\n\n.info-text{\n  /*background-color: yellow;*/\n}\n.info-graphic{\n  background-color: white;\n  text-align: center;\n}\n",
+			"file": "public/css/styles.css",
+			"file_size": 508,
+			"file_write_time": 1474723162000000,
+			"settings":
+			{
+				"buffer_size": 508,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "'use strict';\n(function () {\n  angular.module('dotMutual', ['ngMaterial'])\n    .controller('AppCtrl', function($scope){\n      var vc = this;\n      vc.title = \"test\";\n      console.log('Hello from controller')\n    })\n    .directive('', function(){});\n  console.log('im running');\n}());\n",
+			"file": "public/js/app.js",
+			"file_size": 252,
+			"file_write_time": 1474555671000000,
+			"settings":
+			{
+				"buffer_size": 285,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"BEA",
+				"HTMLBeautify"
+			],
+			[
+				"INSTA",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"togg",
+				"View: Toggle Side Bar"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 568.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/audunfo/Code/Mutual/dotmutual-web/.gitignore",
+		"/Users/audunfo/Code/Mutual/mutual-web/app/app.module.ts",
+		"/Users/audunfo/Code/Mutual/mutual-web/app/app.component.ts",
+		"/Users/audunfo/Code/Mutual/mutual-web/package.json",
+		"/Users/audunfo/Code/Personal/Profsys/ps-api/mobile-api/build.gradle",
+		"/Users/audunfo/Code/Personal/Profsys/ps-read-access-frontend/package.json",
+		"/Users/audunfo/.bash_profile"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"export"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "public/index.html",
+					"settings":
+					{
+						"buffer_size": 3193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2045,
+								2045
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2.0,
+								"tabSize": 2.0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/css/styles.css",
+					"settings":
+					{
+						"buffer_size": 508,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								109,
+								109
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/js/app.js",
+					"settings":
+					{
+						"buffer_size": 285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4.0,
+								"tabSize": 4.0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"app",
+				"public/js/app.js"
+			],
+			[
+				"styl",
+				"public/css/styles.css"
+			],
+			[
+				"ind",
+				"public/index.html"
+			],
+			[
+				"pom",
+				"api/pom.xml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 306.0,
+	"status_bar_visible": true
+}

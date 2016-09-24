@@ -1,10 +1,30 @@
 'use strict';
 (function () {
-  angular.module('dotMutual', ['ngMaterial'])
-    .controller('AppCtrl', function($scope){
-      var vc = this;
-      vc.title = "test";
-      console.log('Hello from controller')
-    });
-  console.log('im running');
+	var app = angular.module('dotMutual', ['ngMaterial'])
+	app.constant('firebase', window.firebase);
+	app.config(function(){
+ 	// Initialize Firebase
+ 		var config = {
+ 		apiKey: "AIzaSyBVEJWnq1ULlF72ds0rHo4NGbXUXKCw7Ko",
+ 		authDomain: "dotmutual.firebaseapp.com",
+ 		databaseURL: "https://dotmutual.firebaseio.com",
+ 		storageBucket: "dotmutual.appspot.com",
+ 		messagingSenderId: "325411411582"
+ 		};
+ 		firebase.initializeApp(config);
+ 		console.log('im running, firebase configured');
+	});
+	
+	app.controller('AppCtrl', function($scope){
+		$scope.form = {};
+
+		$scope.heroClick = function(proceed){
+			if(proceed)
+				console.log('Go further');
+		};
+
+		$scope.submitForm = function(){
+
+		};
+	});
 }());
