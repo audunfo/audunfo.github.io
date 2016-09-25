@@ -15,12 +15,16 @@
  		console.log('im running, firebase configured');
 	});
 	
-	app.controller('AppCtrl', function($scope){
+	app.controller('AppCtrl', function($scope, $anchorScroll){
 		$scope.form = {};
 
 		$scope.heroClick = function(proceed){
 			if(proceed)
 				console.log('Go further');
+		};
+
+		$scope.scrollTo = function(anchor) {
+			$anchorScroll(anchor);
 		};
 
 		$scope.submitForm = function(){

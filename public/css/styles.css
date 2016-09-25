@@ -25,6 +25,23 @@ section img{
   background-size: cover;
   height: 400px;
 }
+
+#hero-form-btn{
+  height: 70px;
+  width: 70px;
+
+  position: absolute;
+  top: 435px;
+  right: 50%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+#hero-form-fab{
+    text-align: center;
+    display: block;
+    height: 0px;
+}
+
 .chevron-btn{
 
 }

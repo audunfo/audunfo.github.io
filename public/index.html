@@ -31,18 +31,42 @@
     <!-- Hero section -->
     <section layout="row" id="hero" layout-align="left center">
       <span flex="50" class="md-display-1" style="color: white; margin-left: 50px;">Ever been worried about the <b>identity</b> of a person you are doing <b>online business</b> with?</span>
+      <div class="flex">
+        
+      </div>
 
-      <md-button class="md-raised md-primary" href="#info-text" md-ripple-size="full" ng-click="heroClick(true)">
+      <!-- Yes / No Form  Alt #1-->
+      <form  id="hero-form" flex="50">
+        <!-- <md-button class="md-raised md-primary" href="#info-text" md-ripple-size="full" ng-click="heroClick(true)">
       Yes
       </md-button>
       <md-button class="md-raised" md-ripple-size="full" ng-click="vc.onClick(false)">
       NOOO
-      </md-button>
-      
-      <!-- <span class="chevron-btn" layout-align="left"><i class="fa fa-chevron-down fa-6" aria-hidden="true"></i></span> -->
+      </md-button> -->
+        
+      </form>
     </section>
+    <!-- Arrow form - Alt #2  -->
+    <form  id="hero-form-fab" flex="100">
+      <md-button class="md-fab md-white-fab" id="hero-form-btn" ng-click="scrollTo('info-text')">
+          <i class="fa fa-chevron-down fa-6"></i>
+        </md-button>  
+    </form>
     <!-- Product info section -->
     <section id="info" layout-gt-sm="row" layout-sm="column">
+      <div layout="row" flex-gt-md="50" flex="100" class="info-text">
+        <img src="/img/welcome-desktop.png" alt="" style="background:cover;"/>
+      </div>
+      <div layout="column" flex-gt-md="50" id="info-text" flex="100" class="info-graphic" layout-align="start center">
+        <h2 class="md-display-3"> Do you feel skeptical?</h2>
+        <p class="md-subhead">
+          Lorem ipsum dolor sit amet, ea elit veniam animal pro. Meis antiopam est ei, sumo debet nonumy an vim. Ne reque aperiri praesent vel, nec no vero elitr cotidieque. Ei vis omnis conceptam, cetero vocibus hendrerit qui id. Sea doctus consequuntur no, nam fabulas dignissim at. Eam legendos lobortis ne, tempor tacimates delicatissimi ne mea, molestiae urbanitas mel in.
+        </p>
+      </div>
+    </section>
+
+    <!-- Signup section -->
+    <section id="signup" layout-gt-sm="row" layout-sm="column">
       <div layout="row" flex-gt-md="50" flex="100" class="info-text">
         <img src="/img/welcome-desktop.png" alt="" style="background:cover;"/>
       </div>
