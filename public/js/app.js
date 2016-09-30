@@ -1,8 +1,8 @@
 'use strict';
 (function () {
-	var app = angular.module('dotMutual', ['ngMaterial'])
+	var app = angular.module('dotMutual', ['ngMaterial']);
 	app.constant('firebase', window.firebase);
-	app.config(function(){
+	app.config(function($mdIconProvider){
  	// Initialize Firebase
  		var config = {
  		apiKey: "AIzaSyBVEJWnq1ULlF72ds0rHo4NGbXUXKCw7Ko",
@@ -12,11 +12,16 @@
  		messagingSenderId: "325411411582"
  		};
  		firebase.initializeApp(config);
- 		console.log('im running, firebase configured');
+		$mdIconProvider.fontSet('md', 'material-icons');
+	});
+
+	app.controller('SignUpCtrl', function(){
+
 	});
 	
-	app.controller('AppCtrl', function($scope, $anchorScroll){
+	app.controller('AppCtrl', function($scope, $anchorScroll, $window, $mdDialog){
 		$scope.form = {};
+		$scope.showMobileButton = false;
 
 		$scope.heroClick = function(proceed){
 			if(proceed)
@@ -27,8 +32,33 @@
 			$anchorScroll(anchor);
 		};
 
-		$scope.submitForm = function(){
-
+		$scope.showSignup = function($event){
+			$mdDialog.show({
+				controller: 'SignUpCtrl',
+				templateUrl: 'templates/signup.tpl.html',
+				parent: angular.element(document.body),
+				targetEvent: $event,
+				clickOutsideToClose:true,
+				size:'lg',
+				fullscreen: false// Only for -xs, -sm breakpoints.
+			})
+				.then(function(answer) {
+					console.log('Awesome!');
+				}, function() {
+					console.log('Canceled');
+				});
 		};
+
+		$scope.shouldShowMobileSignup = function(){
+			console.log(document.body.scrollTop);
+			return window.scrollX >= 500;
+		};
+
+		$scope.$watch(function () {
+			return $window.scrollY;
+		}, function (scrollY) {
+			console.log(scrollY);
+			$scope.showMobileButton = (scrollY > 500);
+		});
 	});
 }());

@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
     <meta name="google-site-verification" content="4xbTy2NMQdbel_fXUMVPSspHqPZaeu_FES4gZaMVKi8" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
     <link rel="stylesheet" href="/css/styles.css" media="screen" title="no title">
     <link rel="stylesheet" href="/css/responsive.css" media="screen" title="no title">
@@ -17,35 +19,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </head>
-  <body ng-app="dotMutual" ng-cloak>
-    <md-content ng-controller="AppCtrl">
-    <nav layout="row" class="nav">
+  <body ng-app="dotMutual" ng-controller="AppCtrl" ng-cloak>
+
+  <md-content>
+    <nav layout="row" class="nav" flex>
       <img src="/img/logo.png" alt="DotMutual" class="nav-logo"/>
       <span flex></span>
       <div layout="column" layout-align="center">
-        <md-button class="" ng-href="http://blog.dotmutual.io">Blog</md-button>
+        <!--<md-button class="" ng-href="http://blog.dotmutual.io">Blog</md-button>-->
       </div>
       <div layout="column" layout-align="center">
-        <md-button class="md-primary md-raised btn-signup" ng-click="">Signup</md-button>
+        <md-button class="md-primary md-raised btn-signup" ng-click="scrollTo('form')">Signup</md-button>
       </div>
     </nav>
     <!-- Hero section -->
     <section layout="row" id="hero" layout-align="left center">
-      <span flex="50" class="md-display-1" style="color: white; margin-left: 50px;">Ever been worried about the <b>identity</b> of a person you are doing <b>online business</b> with?</span>
+      <span flex="100" flex-gt-sm="50" class="md-display-1" style="color: white; margin-left: 50px;">Ever been worried about the <b>identity</b> of a person you are doing <b>online business</b> with?</span>
       <div class="flex">
 
       </div>
-
-      <!-- Yes / No Form  Alt #1-->
-      <form  id="hero-form" flex="50">
-        <!-- <md-button class="md-raised md-primary" href="#info-text" md-ripple-size="full" ng-click="heroClick(true)">
-      Yes
-      </md-button>
-      <md-button class="md-raised" md-ripple-size="full" ng-click="vc.onClick(false)">
-      NOOO
-      </md-button> -->
-
-      </form>
     </section>
     <!-- Arrow form - Alt #2  -->
     <form  id="hero-form-fab" flex="100">
@@ -54,28 +46,74 @@
         </md-button>
     </form>
     <!-- Product info section -->
-    <section id="info" layout-gt-sm="row" layout-sm="column">
+    <section id="info" layout-gt-sm="row" layout-sm="column" class="img-left">
       <div layout="row" flex-gt-md="50" flex="100" class="info-text">
         <img src="/img/welcome-desktop.png" alt="" style="background:cover;"/>
       </div>
       <div layout="column" flex-gt-md="50" id="info-text" flex="100" class="info-graphic" layout-align="start center">
-        <h2 class="md-display-3"> Do you feel skeptical?</h2>
+        <h2 class="md-display-1"> Why?</h2>
         <p class="md-subhead">
-          Lorem ipsum dolor sit amet, ea elit veniam animal pro. Meis antiopam est ei, sumo debet nonumy an vim. Ne reque aperiri praesent vel, nec no vero elitr cotidieque. Ei vis omnis conceptam, cetero vocibus hendrerit qui id. Sea doctus consequuntur no, nam fabulas dignissim at. Eam legendos lobortis ne, tempor tacimates delicatissimi ne mea, molestiae urbanitas mel in.
+          .Mutual wants to lessen your concerns and make your experience of selling furniture  as easy for you as possible. We believe that trust is an essential aspect when interacting with strangers. This is why we want to enable a trustworthy environment between you and the buyer for an satisfactory transaction.
         </p>
       </div>
     </section>
 
     <!-- Signup section -->
-    <section id="signup" layout-gt-sm="row" layout-sm="column">
+    <section id="signup" layout-gt-sm="row" layout-sm="column" class="img-right">
+      <div layout="column" flex-gt-md="50" id="info-text-2" flex="100" class="info-graphic" layout-align="start center">
+        <h2 class="md-display-1">Online directory of people</h2>
+        <p class="md-subhead">
+          In other words, we would make asking for identification as normal as a hand-shake
+          In this way you can handle interactions and transactions with people based on your own
+
+          Ask for identfication - Hand-shake – as normal as a hand shake.
+        </p>
+      </div>
       <div layout="row" flex-gt-md="50" flex="100" class="info-text">
         <img src="/img/welcome-desktop.png" alt="" style="background:cover;"/>
       </div>
-      <div layout="column" flex-gt-md="50" id="info-text" flex="100" class="info-graphic" layout-align="start center">
-        <h2 class="md-display-3"> Do you feel skeptical?</h2>
-        <p class="md-subhead">
-          Lorem ipsum dolor sit amet, ea elit veniam animal pro. Meis antiopam est ei, sumo debet nonumy an vim. Ne reque aperiri praesent vel, nec no vero elitr cotidieque. Ei vis omnis conceptam, cetero vocibus hendrerit qui id. Sea doctus consequuntur no, nam fabulas dignissim at. Eam legendos lobortis ne, tempor tacimates delicatissimi ne mea, molestiae urbanitas mel in.
-        </p>
+    </section>
+
+      <!-- Testimonials section-->
+      <section id="testimonials" layout="column" layout-align="stretch">
+
+        <span class="md-display-1 headline">What people say about us</span>
+
+        <div layout="column" layout-gt-sm="row">
+
+        <div layout="column" class="profile-item" flex-gt-sm="25" flex="50">
+          <img src="img/profile-pics-18.jpg" alt="" class="img-circle"/>
+          <span class="md-headline profile-item-text">" .DotMutual solves all my problems!"</span>
+        </div>
+        <div layout="column" class="profile-item" flex-gt-sm="25" flex="50">
+          <img src="img/profile-pics-16.png" alt="" class="img-circle"/>
+          <span class="md-headline profile-item-text"> ".DotMutual gives you peace of mind!"</span>
+        </div>
+        <div layout="column" class="profile-item" flex-gt-sm="25" flex="50">
+          <img src="img/profile-pics-18.jpg" alt="" class="img-circle"/>
+          <span class="md-headline profile-item-text"> "I never shopped online before, but with .DotMutual its all good!"</span>
+        </div>
+        <div layout="column"  class="profile-item" flex-gt-sm="25" flex="50">
+          <img src="img/profile-pics-16.png" alt="" class="img-circle"/>
+          <span class="md-headline profile-item-text"> ".DotMutual solves all my problems!"</span>
+        </div>
+        </div>
+      </section>
+
+    <!--<md-button class="md-primary mobile-btn md-raised" ng-if="showMobileButton" ng-click="scrollTo('info-text')">Signup</md-button>-->
+
+    <section id="form" layout="column">
+      <span class="md-display-1"> Get DotMutual</span>
+      <div class="md-form">
+      <md-input-container class="md-block" layout="row">
+        <!-- Use floating placeholder instead of label -->
+        <md-icon  class="material-icons">email</md-icon>
+        <input ng-model="user.email" type="email" style="padding-left: 10px;" placeholder="Email (required)" name="email" ng-required="true">
+        <flex/>
+      </md-input-container>
+        <md-input-container layout="row">
+          <md-button class="md-primary md-raised" id="submit" ng-disabled="length(user.email) > 0">Signup</md-button>
+        </md-input-container>
       </div>
     </section>
     </md-content>

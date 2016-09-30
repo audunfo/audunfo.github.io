@@ -3,7 +3,54 @@
       font-size: 85%;
       width: 100%;
     }
+
+    section p{
+        padding:  0 20px 0 20px;
+    }
+    #hero span{
+        font-size: 1.5em;
+    }
+    section img{
+        height: 200px;
+    }
     .md-display-1{
       font-size: 2em;
+    }
+
+    .mobile-btn{
+        margin: 0;
+        float: bottom;
+        position: fixed;
+        bottom: 50px;
+        left:0;
+        width:100%;
+    }
+
+}
+
+@media screen and (min-width: 800px){
+    section img{
+        height: 400px;
+    }
+
+    #hero{
+        height: 500px;
+    }
+
+    #hero-form-btn{
+        top:545px;
+    }
+
+    #testimonials{
+        padding: 0 50px 0 50px;
+    }
+    .mobile-btn{
+        display: none;
+    }
+
+    #form md-input-container{
+        padding: 20px;
+        margin: 0 auto;
+        width: 80%;
     }
 }

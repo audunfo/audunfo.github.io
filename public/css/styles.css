@@ -1,7 +1,7 @@
 
 .nav {
   background-color: white;
-  shape-outside: linear-gradient(250, 0, 0);
+  /*height: 250px;*/
 }
 .nav-logo{
   height: 80px;
@@ -15,14 +15,13 @@
 section{
   background-color: white;
 }
-section img{
-  height: 400px;
-}
+
 
 #hero{
   background-image: url('/img/hero-bg-1024-2x.jpg');
   background-position: center;
   background-size: cover;
+  overflow: hidden !important;
   height: 400px;
 }
 
@@ -54,4 +53,48 @@ section img{
 .info-graphic{
   background-color: white;
   text-align: center;
+}
+
+.img-circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.profile-item{
+  padding-top: 25px;
+}
+.profile-item img{
+  margin: 0 auto;
+}
+.profile-item-text{
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+/**.profile-item-text{
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+}**/
+.headline{
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+#form{
+  padding-top: 100px;
+  margin: 0 auto;
+  height: 400px;
+}
+
+#form span {
+  text-align: center;
+}
+
+
+md-input-container #submit{
+  margin: 0 auto;
+  min-width: 250px;
+  min-height: 60px;
 }
