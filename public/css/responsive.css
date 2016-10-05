@@ -7,6 +7,9 @@
     section p{
         padding:  0 20px 0 20px;
     }
+    #hero .md-display-1{
+    	text-align: center;
+    }
     #hero span{
         font-size: 1.5em;
     }
@@ -26,6 +29,10 @@
         width:100%;
     }
 
+    #meta {
+    	padding-left: 20px !important;
+    	padding-right: 20px !important;
+    }
 }
 
 @media screen and (min-width: 800px){
@@ -35,6 +42,9 @@
 
     #hero{
         height: 500px;
+    }
+    #hero .md-display-1{
+    	text-align: left;
     }
 
     #hero-form-btn{
@@ -53,4 +63,28 @@
         margin: 0 auto;
         width: 80%;
     }
+
+
+}
+
+#works p {
+	/*text-align: left;*/
+	padding: 0 20px 0 20px;
+}
+
+#meta span{
+	z-index: 2;
+}
+#meta{
+  background-image: url('/img/bg-49.jpg');
+  background-position: left bottom;
+  background-size: cover;
+  overflow: hidden !important;
+  height: 400px;
+  background-color:white;
+  text-align:center;
+  padding: 10px;
+  color: white;
+  padding-left: 80px;
+  padding-right: 80px;
 }

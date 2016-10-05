@@ -15,12 +15,26 @@
 		$mdIconProvider.fontSet('md', 'material-icons');
 	});
 
-	app.controller('SignUpCtrl', function(){
+	app.controller('SignUpCtrl', function($scope, firebase){
+		$scope.user = {};
+		$scope.success = false;
+
+		$scope.signup = function(){
+			var db = firebase.database();
+			var objRef = db.ref().child('signups').push().key;
+			var payload = {};
+			payload['/signups/' + objRef] = $scope.user.email;
+			db.ref().update(payload).then(function(){
+				$scope.success = true;
+				console.log('Saved to db');
+			}, function(error){
+				console.log(error);
+			});
+		};
 
 	});
-	
+
 	app.controller('AppCtrl', function($scope, $anchorScroll, $window, $mdDialog){
-		$scope.form = {};
 		$scope.showMobileButton = false;
 
 		$scope.heroClick = function(proceed){
