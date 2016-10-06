@@ -14,6 +14,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
 		<script src="https://use.fontawesome.com/31e7cde6c9.js"></script>
 		<!-- Angular Material Library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
@@ -50,7 +51,7 @@
 		<!-- Product info section -->
 		<section id="info" layout-gt-sm="row" layout-sm="column" class="img-left">
 			<div layout="row" flex-gt-md="50" flex="100" class="info-text">
-				<img src="/img/welcome-desktop.png" id="info-img"alt="" style="background:cover;"/>
+				<img src="/img/people_search_1.png" id="info-img"alt="" style="background:cover; margin:0 auto;"/>
 			</div>
 			<div layout="column" flex-gt-md="50" id="info-text" flex="100" class="info-graphic" layout-align="start center">
 				<h2 class="md-display-1"> What is Mutual?</h2>
@@ -63,7 +64,7 @@
 		<!-- Signup section -->
 		<section id="works" layout-gt-sm="row" layout-sm="column" class="img-right">
 			<div layout="row" flex-gt-md="50" flex="100" class="info-text" hide-gt-sm>
-				<img src="/img/welcome-desktop.png" alt="" style="background:cover;"/>
+				<img src="/img/people_search_2.png" alt="" style="background:cover; margin: 0 auto;"/>
 			</div>
 
 			<div layout="column" flex-gt-md="50" id="info-text-2" flex="100" class="info-graphic" layout-align="start center" >
@@ -78,7 +79,7 @@ You can sign up quickly to see their public profile. Verify yourself using a dri
 			</p>
 			</div>
 			<div layout="row" flex-gt-md="50" flex="100" class="info-text" hide-sm hide-xs>
-				<img src="/img/welcome-desktop.png" alt="" style="background:cover;"/>
+				<img src="/img/people_search_2.png" alt="" style="background:cover; margin:0 auto;"/>
 			</div>
 		</section>
 
@@ -122,8 +123,9 @@ You can sign up quickly to see their public profile. Verify yourself using a dri
 
 		<section id="form" layout="column" ng-controller="SignUpCtrl">
 			<span class="md-body-2" style="margin-bottom: 20px;">
-			We’re a small startup based out of StartupLab at Forskningsparken in Oslo. We are working really hard to build the first version of .Mutual. If you’re interested in trying .Mutual’s verified profiles, please share your email address with us. We promise we will not spam you!
+			We’re a small startup based out of StartupLab at Forskningsparken in Oslo. We are working really hard to build the first version of .Mutual. If you’re interested in trying .Mutual’s verified profiles, please share your email address with us.
 			</span>
+			<!-- We promise we will not spam you! -->
 			<span class="md-display-1" style="padding:20px;" ng-hide="{{$scope.success}}"> Get DotMutual</span>
 			<div class="md-form" ng-class="{hide: $scope.success}">
 			<md-input-container class="md-block" layout="row">
@@ -133,11 +135,11 @@ You can sign up quickly to see their public profile. Verify yourself using a dri
 				<flex/>
 			</md-input-container>
 				<md-input-container layout="row">
-					<md-button class="md-primary md-raised" id="submit" ng-disabled="!user.email" ng-click="signup()">Signup</md-button>
+					<md-button class="md-primary md-raised" id="submit" ng-disabled="!user.email" ng-click="signup()">Join the waitlist</md-button>
 				</md-input-container>
 			</div>
 			<md-card class="form-success" ng-class="{hide: !$scope.success}" layout="column" layout-align="center center">
-				<h1 class="md-display-1"> Success</h1>
+				<h1 class="md-display-1">Success</h1>
 				<p class="md-subhead">We will notify you when we launch!</p>
 			</md-card>
 		</section>

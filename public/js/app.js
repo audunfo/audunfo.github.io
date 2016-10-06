@@ -1,6 +1,6 @@
 'use strict';
 (function () {
-	var app = angular.module('dotMutual', ['ngMaterial']);
+	var app = angular.module('dotMutual', ['ngMaterial', 'ngRoute']);
 	app.constant('firebase', window.firebase);
 	app.config(function($mdIconProvider){
  	// Initialize Firebase
