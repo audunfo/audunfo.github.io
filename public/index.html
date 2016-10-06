@@ -6,27 +6,27 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
-		<link rel="stylesheet" href="/css/styles.css" media="screen" title="no title">
-		<link rel="stylesheet" href="/css/responsive.css" media="screen" title="no title">
+		<link rel="stylesheet" href="/css/styles.css" media="screen" >
+		<link rel="stylesheet" href="/css/responsive.css" media="screen" >
+		<link rel="stylesheet" href="/css/checkbin.css" media="screen" >
 		<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
-		<!-- Angular Material requires Angular.js Libraries -->
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-
 		<script src="https://use.fontawesome.com/31e7cde6c9.js"></script>
-		<!-- Angular Material Library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+		 <script src="/bower_components/angular/angular.min.js" type="text/javascript"></script>
+		 <script src="/bower_components/angular-animate/angular-animate.min.js" type="text/javascript"></script>
+		 <script src="/bower_components/angular-aria/angular-aria.min.js" type="text/javascript"></script>
+		 <script src="/bower_components/angular-messages/angular-messages.min.js" type="text/javascript"></script>
+		 <script src="/bower_components/angular-material/angular-material.min.js" type="text/javascript"></script>
+		 <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js" type="text/javascript"></script>
+		 <script src="/bower_components/angular-route/angular-route.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 	</head>
 	<body ng-app="dotMutual" ng-controller="AppCtrl" ng-cloak>
 
 
 		<nav layout="row" class="nav" flex>
+			<a href="https://dotmutual.io" >
 			<img src="/img/logo.png" alt="DotMutual" class="nav-logo"/>
+			</a>
 			<span flex></span>
 			<div layout="column" layout-align="center">
 				<!--<md-button class="" ng-href="http://blog.dotmutual.io">Blog</md-button>-->
@@ -37,6 +37,9 @@
 		</nav>
 		<!-- Hero section -->
 		<section layout="row" id="hero" layout-align="left center">
+			<div class="image-layer">
+				<!-- Keep this empty -->
+			</div>
 			<span flex="100" flex-gt-sm="60" class="md-display-2" style="color: white; padding: 20px;">
 				Have you ever searched for someone online before meeting them in person?
 				<!-- Have you found it difficult to tell whether you should trust them or not? -->
@@ -86,8 +89,9 @@ You can sign up quickly to see their public profile. Verify yourself using a dri
 		</section>
 
 		<section layout="column" id="meta" layout-align="center center">
-			<span class="md-display-1">
-				<b>&quot;49% of people say they’re worried about fraud or safety when buying or selling used items from strangers.&quot;</b> <br><br>
+			<div class="image-layer"></div>
+			<span class="md-display-1" style="padding: 15px;">
+				&quot;49% of people say they’re worried about fraud or safety when buying or selling used items from strangers.&quot; <br><br>
 				.Mutual User Research</span>
 		</section>
 
@@ -99,53 +103,40 @@ You can sign up quickly to see their public profile. Verify yourself using a dri
 
 				<div layout="column" class="profile-item" flex-gt-sm="25" flex="50">
 					<!-- <img src="img/profile-pics-18.jpg" alt="" class="img-circle"/> -->
-					<span class="md-body-1 profile-item-text">" “Looked like a trustworthy person on Facebook. Wanted to check just to be sure it was not a stolen item. Also just checked out of curiosity.” Fredrik*, Oslo"</span>
+					<span class="md-body-1 profile-item-text">“Looked like a trustworthy person on Facebook. Wanted to check just to be sure it was not a stolen item. Also just checked out of curiosity.” <br> <b>Fredrik, Oslo</b></span>
 				</div>
 
 				<div layout="column" class="profile-item" flex-gt-sm="25" flex="50">
 					<!-- <img src="img/profile-pics-16.png" alt="" class="img-circle"/> -->
-					<span class="md-body-1 profile-item-text"> "“It's very sketchy online buying or selling. You never know. I don't trust people. You meet them in person that's the solution. I text them. Try to ensure they're not weird persons.” Sofie*, Oslo"</span>
+					<span class="md-body-1 profile-item-text"> “It's very sketchy online buying or selling. You never know. I don't trust people. You meet them in person that's the solution. I text them. Try to ensure they're not weird persons.” <br><b>Sofie, Oslo</b></span>
 				</div>
 
 				<div layout="column" class="profile-item" flex-gt-sm="25" flex="50">
 					<!-- <img src="img/profile-pics-18.jpg" alt="" class="img-circle"/> -->
-					<span class="md-body-1 profile-item-text"> "“If they come to my house I want to know who's the girl. I facebook them if meeting them in public as well. See pictures and check if they look normal. I am good at finding fake profiles.” Nina*, Oslo"</span>
+					<span class="md-body-1 profile-item-text"> “If they come to my house I want to know who's the girl. I facebook them if meeting them in public as well. See pictures and check if they look normal. I am good at finding fake profiles.” <br> <b>Nina, Oslo</b></span>
 				</div>
 
 				<div layout="column"  class="profile-item" flex-gt-sm="25" flex="50">
 					<!-- <img src="img/profile-pics-16.png" alt="" class="img-circle"/> -->
-					<span class="md-body-1 profile-item-text"> "“You don't know who you're gonna meet. He can rob you. Go with someone and meet at a safe public place. The guy in my case seemed nice and okay so I took my chances.” Marius*, Oslo"
+					<span class="md-body-1 profile-item-text"> “You don't know who you're gonna meet. He can rob you. Go with someone and meet at a safe public place. The guy in my case seemed nice and okay so I took my chances.” <br><b>Marius, Oslo</b>"
 					</span>
 
 				<!-- </div> -->
 				</div>
 			</section>
-			<section id="form" layout="column" ng-controller="SignUpCtrl">
-				<span class="md-display-1" style="padding:5px;" ng-hide="{{$scope.success}}"> About us</span>
-	<span class="md-body-2" style="padding: 20px;">
-		We’re a small startup based out of StartupLab at Forskningsparken in Oslo. We are working really hard to build the first version of .Mutual. If you’re interested in trying .Mutual’s verified profiles, please share your email address with us.
-	</span>
-	<!-- We promise we will not spam you! -->
 
-	<div class="md-form" ng-class="{hide: $scope.success}">
-		<md-input-container class="md-block" layout="row">
-		<!-- Use floating placeholder instead of label -->
-		<md-icon  class="material-icons">email</md-icon>
-		<input ng-model="user.email" type="email" style="padding-left: 10px;" placeholder="Email (required)" name="email" ng-required="true">
-		<flex/>
-		</md-input-container>
-		<md-input-container layout="row">
-		<md-button class="md-primary md-raised" id="submit" ng-disabled="!user.email" ng-click="signup()">Join the waitlist</md-button>
-		</md-input-container>
-	</div>
-	<md-card class="form-success" ng-class="{hide: !$scope.success}" layout="column" layout-align="center center">
-	<h1 class="md-display-1">Success</h1>
-	<p class="md-subhead">We will notify you when we launch!</p>
-	</md-card>
-</section>
 			<section ui-view>
 			<!-- Placeholder for injected view-->
 			</section>
-
 	</body>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85366801-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </html>

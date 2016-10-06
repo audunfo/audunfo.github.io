@@ -29,6 +29,10 @@
 				width:100%;
 		}
 
+		#meta span {
+			font-size: 25px !important;
+		}
+
 		#meta {
 			padding-left: 20px !important;
 			padding-right: 20px !important;
@@ -63,8 +67,6 @@
 				margin: 0 auto;
 				width: 80%;
 		}
-
-
 }
 
 #works p {
@@ -72,9 +74,6 @@
 	padding: 0 20px 0 20px;
 }
 
-#meta span{
-	z-index: 2;
-}
 #meta{
 	background-image: url('/img/bg-49.jpg');
 	background-position: left bottom;
@@ -87,4 +86,8 @@
 	color: white;
 	padding-left: 80px;
 	padding-right: 80px;
+}
+
+md-input-container{
+	margin:40px;
 }

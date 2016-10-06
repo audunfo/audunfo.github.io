@@ -1,10 +1,11 @@
-<section id="form" layout="column" ng-controller="SignUpCtrl">
-	<span class="md-body-2" style="margin-bottom: 20px;">
+<div id="form" layout="column">
+	<span class="md-display-1" style="padding:5px;"> About us</span>
+	<span class="md-body-2" style="padding: 20px;">
 		We’re a small startup based out of StartupLab at Forskningsparken in Oslo. We are working really hard to build the first version of .Mutual. If you’re interested in trying .Mutual’s verified profiles, please share your email address with us.
 	</span>
-	<!-- We promise we will not spam you! -->
-	<span class="md-display-1" style="padding:20px;" ng-hide="{{$scope.success}}"> Get DotMutual</span>
-	<div class="md-form" ng-class="{hide: $scope.success}">
+	<div class="md-form" layout-align="center center">
+		<!-- <span class="md-display-1" style="margin: 0 auto;"> Join the waitlist</span> -->
+		<br><br>
 		<md-input-container class="md-block" layout="row">
 		<!-- Use floating placeholder instead of label -->
 		<md-icon  class="material-icons">email</md-icon>
@@ -15,8 +16,4 @@
 		<md-button class="md-primary md-raised" id="submit" ng-disabled="!user.email" ng-click="signup()">Join the waitlist</md-button>
 		</md-input-container>
 	</div>
-	<md-card class="form-success" ng-class="{hide: !$scope.success}" layout="column" layout-align="center center">
-	<h1 class="md-display-1">Success</h1>
-	<p class="md-subhead">We will notify you when we launch!</p>
-	</md-card>
-</section>
+</div>
