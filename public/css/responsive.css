@@ -1,68 +1,68 @@
 @media screen and (max-width: 800px) {
-    section{
-      font-size: 85%;
-      width: 100%;
-    }
+		section{
+			font-size: 85%;
+			width: 100%;
+		}
 
-    section p{
-        padding:  0 20px 0 20px;
-    }
-    #hero .md-display-1{
-    	text-align: center;
-    }
-    #hero span{
-        font-size: 1.5em;
-    }
-    section img{
-        height: 200px;
-    }
-    .md-display-1{
-      font-size: 2em;
-    }
+		section p{
+				padding:  0 20px 0 20px;
+		}
+		#hero .md-display-1{
+			text-align: center;
+		}
+		#hero span{
+			font-size: 35px;
+		}
+		section img{
+				height: 200px;
+		}
+		.md-display-1{
+			font-size: 2em;
+		}
 
-    .mobile-btn{
-        margin: 0;
-        float: bottom;
-        position: fixed;
-        bottom: 50px;
-        left:0;
-        width:100%;
-    }
+		.mobile-btn{
+				margin: 0;
+				float: bottom;
+				position: fixed;
+				bottom: 50px;
+				left:0;
+				width:100%;
+		}
 
-    #meta {
-    	padding-left: 20px !important;
-    	padding-right: 20px !important;
-    }
+		#meta {
+			padding-left: 20px !important;
+			padding-right: 20px !important;
+		}
 }
 
 @media screen and (min-width: 800px){
-    section img{
-        height: 400px;
-    }
+		section img{
+				height: 400px;
+		}
 
-    #hero{
-        height: 500px;
-    }
-    #hero .md-display-1{
-    	text-align: left;
-    }
+		#hero{
+				height: 550px;
+		}
+		#hero .md-display-1{
+			text-align: left;
+		}
 
-    #hero-form-btn{
-        top:545px;
-    }
+		#hero-form-btn{
+				top:595px;
+		}
 
-    #testimonials{
-        padding: 0 50px 0 50px;
-    }
-    .mobile-btn{
-        display: none;
-    }
+		#testimonials{
+				padding: 0 50px 0 50px;
+		}
+		.mobile-btn{
+				display: none;
+		}
 
-    #form md-input-container{
-        padding: 20px;
-        margin: 0 auto;
-        width: 80%;
-    }
+		#form md-input-container{
+				padding: 20px;
+				margin: 0 auto;
+				width: 80%;
+		}
 
 
 }
@@ -76,15 +76,15 @@
 	z-index: 2;
 }
 #meta{
-  background-image: url('/img/bg-49.jpg');
-  background-position: left bottom;
-  background-size: cover;
-  overflow: hidden !important;
-  height: 400px;
-  background-color:white;
-  text-align:center;
-  padding: 10px;
-  color: white;
-  padding-left: 80px;
-  padding-right: 80px;
+	background-image: url('/img/bg-49.jpg');
+	background-position: left bottom;
+	background-size: cover;
+	overflow: hidden !important;
+	height: 400px;
+	background-color:white;
+	text-align:center;
+	padding: 10px;
+	color: white;
+	padding-left: 80px;
+	padding-right: 80px;
 }

@@ -1,6 +1,22 @@
-<md-dialog aria-label="Get notified when we launch!">
-    <h1>SIGNUP</h1>
-    <form class="md-form">
-        <input type="email" />
-    </form>
-</md-dialog>
+<section id="form" layout="column" ng-controller="SignUpCtrl">
+	<span class="md-body-2" style="margin-bottom: 20px;">
+		We’re a small startup based out of StartupLab at Forskningsparken in Oslo. We are working really hard to build the first version of .Mutual. If you’re interested in trying .Mutual’s verified profiles, please share your email address with us.
+	</span>
+	<!-- We promise we will not spam you! -->
+	<span class="md-display-1" style="padding:20px;" ng-hide="{{$scope.success}}"> Get DotMutual</span>
+	<div class="md-form" ng-class="{hide: $scope.success}">
+		<md-input-container class="md-block" layout="row">
+		<!-- Use floating placeholder instead of label -->
+		<md-icon  class="material-icons">email</md-icon>
+		<input ng-model="user.email" type="email" style="padding-left: 10px;" placeholder="Email (required)" name="email" ng-required="true">
+		<flex/>
+		</md-input-container>
+		<md-input-container layout="row">
+		<md-button class="md-primary md-raised" id="submit" ng-disabled="!user.email" ng-click="signup()">Join the waitlist</md-button>
+		</md-input-container>
+	</div>
+	<md-card class="form-success" ng-class="{hide: !$scope.success}" layout="column" layout-align="center center">
+	<h1 class="md-display-1">Success</h1>
+	<p class="md-subhead">We will notify you when we launch!</p>
+	</md-card>
+</section>

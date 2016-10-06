@@ -1,0 +1,17 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/audunfo/audunfo.github.io",
+  "authors": [
+    "Audun Follegg <afo@telenordigital.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,8 +1,9 @@
 'use strict';
 (function () {
-	var app = angular.module('dotMutual', ['ngMaterial', 'ngRoute']);
+	var app = angular.module('dotMutual', ['ngMaterial']);
 	app.constant('firebase', window.firebase);
 	app.config(function($mdIconProvider){
+	// app.config(function($mdIconProvider){
  	// Initialize Firebase
  		var config = {
  		apiKey: "AIzaSyBVEJWnq1ULlF72ds0rHo4NGbXUXKCw7Ko",
@@ -13,6 +14,28 @@
  		};
  		firebase.initializeApp(config);
 		$mdIconProvider.fontSet('md', 'material-icons');
+
+
+	// Enable HTML5 mode
+    	// $locationProvider.html5Mode(
+     //    	{
+     //        	enabled: false,
+     //        	requireBase: false
+     //    	}
+    	// );
+
+    	// $urlRouterProvider.otherwise('/form');
+    	//  $stateProvider
+     //    	.state('signup', {
+     //        	url: '/form',
+     //        	templateUrl: './templates/signup.tpl.html' ,
+     //        	controller: 'SignUpCtrl',
+     //    	})
+     //    	.state('success', {
+     //    		url:'/success',
+     //    		templateUrl: './templates/signup-success.tpl.html',
+     //    		controller:'SuccessCtrl'
+     //    	})
 	});
 
 	app.controller('SignUpCtrl', function($scope, firebase){
